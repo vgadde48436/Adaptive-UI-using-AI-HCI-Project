@@ -52,6 +52,4 @@ The tests check whether the adaptive logic returns the expected interface mode f
 - JavaScript
 - Rule-based AI-style adaptive decision logic
 
-## AI Tool Disclosure
 
-OpenAI ChatGPT was used to help brainstorm the project structure, explain adaptive UI and Intelligent User Interface concepts, and support development of the prototype code and documentation. The final project should be reviewed and edited by the student before submission.
