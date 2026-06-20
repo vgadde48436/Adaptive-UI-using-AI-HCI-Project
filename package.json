@@ -1,0 +1,18 @@
+{
+  "name": "adaptive-ui-using-ai-hci-project",
+  "version": "1.0.0",
+  "description": "Adaptive UI prototype demonstrating AI-HCI concepts through a browser-based task assistant.",
+  "main": "app.js",
+  "scripts": {
+    "test": "node tests/adaptiveLogic.test.js"
+  },
+  "keywords": [
+    "adaptive-ui",
+    "hci",
+    "ai",
+    "user-experience",
+    "intelligent-user-interface"
+  ],
+  "author": "vgadde48436",
+  "license": "MIT"
+}

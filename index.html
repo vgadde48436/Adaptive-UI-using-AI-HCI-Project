@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adaptive Task Assistant</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app-shell" id="appShell">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">AI-HCI Adaptive UI Demo</p>
+        <h1>Adaptive Task Assistant</h1>
+        <p>
+          This prototype adapts its interface based on user experience level,
+          workload, task priority, and focus preference.
+        </p>
+      </div>
+      <div class="mode-card" aria-live="polite">
+        <span class="label">Current Adaptive Mode</span>
+        <strong id="modeName">Balanced Mode</strong>
+        <p id="modeReason">Add tasks or change preferences to see the interface adapt.</p>
+      </div>
+    </header>
+
+    <section class="grid">
+      <section class="panel" aria-labelledby="profileHeading">
+        <h2 id="profileHeading">User Profile</h2>
+        <p class="helper-text" id="profileHelp">
+          Select your current comfort level so the interface can provide the right amount of support.
+        </p>
+
+        <label for="experienceLevel">Experience level</label>
+        <select id="experienceLevel">
+          <option value="beginner">Beginner</option>
+          <option value="intermediate" selected>Intermediate</option>
+          <option value="advanced">Advanced</option>
+        </select>
+
+        <label class="checkbox-row">
+          <input type="checkbox" id="focusPreference" />
+          I want fewer distractions
+        </label>
+
+        <button id="resetBtn" type="button" class="secondary-btn">Reset Demo</button>
+      </section>
+
+      <section class="panel" aria-labelledby="taskHeading">
+        <h2 id="taskHeading">Add a Task</h2>
+        <p class="helper-text" id="taskHelp">
+          Add tasks with priority levels. The interface will adapt when workload or urgency increases.
+        </p>
+
+        <form id="taskForm">
+          <label for="taskInput">Task name</label>
+          <input id="taskInput" type="text" placeholder="Example: Finish APA report" required />
+
+          <label for="prioritySelect">Priority</label>
+          <select id="prioritySelect">
+            <option value="low">Low</option>
+            <option value="medium" selected>Medium</option>
+            <option value="high">High</option>
+          </select>
+
+          <button type="submit">Add Task</button>
+        </form>
+      </section>
+    </section>
+
+    <section class="panel recommendation" aria-labelledby="recommendationHeading">
+      <h2 id="recommendationHeading">Adaptive Recommendation</h2>
+      <p id="recommendationText">
+        The system is waiting for more context. Add tasks or update your profile to receive a recommendation.
+      </p>
+      <div class="metrics" id="metricsPanel" hidden>
+        <span><strong id="totalTasks">0</strong> total tasks</span>
+        <span><strong id="highTasks">0</strong> high priority</span>
+        <span><strong id="completionSignal">Balanced</strong> workload signal</span>
+      </div>
+    </section>
+
+    <section class="panel" aria-labelledby="listHeading">
+      <div class="section-heading">
+        <h2 id="listHeading">Task List</h2>
+        <span id="taskCount">0 tasks</span>
+      </div>
+      <ul id="taskList" class="task-list"></ul>
+      <p id="emptyState" class="empty-state">No tasks yet. Add a task to begin.</p>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

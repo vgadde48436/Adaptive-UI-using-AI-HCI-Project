@@ -1,0 +1,13 @@
+Adaptive User Interfaces and AI-Based Human-Computer Interaction
+
+This project demonstrates an adaptive user interface using AI-related human-computer interaction concepts. The solution is a browser-based Adaptive Task Assistant that changes its guidance, recommendations, and task display based on user experience level, workload, task priority, and focus preference.
+
+An adaptive user interface changes its layout, content, navigation, or interaction style based on the user, task, environment, device, or context. An Intelligent User Interface uses artificial intelligence or computational intelligence to improve interaction between humans and computers. AI-based adaptive human-computer interaction uses AI techniques to personalize, modify, or improve the relationship between a human user and a computer system.
+
+The project was created using HTML, CSS, and JavaScript. HTML provides the structure, CSS controls the appearance, and JavaScript contains the adaptive decision logic. The application includes beginner mode, focus mode, balanced mode, and advanced mode. The interface adapts by showing extra guidance, reducing distractions, highlighting urgent tasks, and displaying productivity metrics.
+
+GitHub Repository URL:
+https://github.com/vgadde48436/Adaptive-UI-using-AI-HCI-Project
+
+AI Tool Disclosure:
+OpenAI ChatGPT assisted with brainstorming the report structure, explaining adaptive UI and Intelligent User Interface concepts, and supporting the creation of prototype source code and documentation. The final project should be reviewed by the student before submission.
